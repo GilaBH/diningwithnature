@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Bree Serif', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #474747;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+	background: url(./images/papyrus.png);
+	width: 100%;
+	height: auto;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background: rgba(247, 162, 120, .5);
+	padding: 0 2%;
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	align-items: center;
+}
+
+header li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+header li a {
+	text-decoration: none;
+	
+}
+
+header li a:hover {
+	text-decoration: underline;
+}
+
+
+header img, header i {
+	align-self: center;
+	padding: 2px;
+	cursor: pointer;
+}
+
+
+/* Title and nav bar*/
+
+
+h1 {
+	text-align: center;
+	font-family: "Satisfy", cursive;
+	font-size: 7.5vw;
+	margin: 25px 0;
+	text-shadow: -3px -3px 2px rgba(215, 214, 214,0.3), 3px 3px 2px rgba(122, 122, 122, 0.8);
+}
+
+nav {
+	margin-bottom: 20px;
+	
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	font-weight: bold;
+	justify-content: space-around;
+	margin: 0 30%;
+}
+
+nav li {
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	min-width: 50px;
+
+}
+
+nav li a img {
+	height: auto;
+	margin: auto;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+/* Recipe heading */
+
+main {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 3%;
+}
+
+.articles {
+	display: flex;
+	width: 95%;
+	margin-top: 2%;
+	flex-wrap: wrap;
+	align-content: start;
+}
+
+article {
+	padding: 2%;
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+article a {
+	text-decoration: none;
+}
+
+article img {
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px;
+	position: relative;
+}
+
+.recipe-icons {
+	display: flex;
+	justify-content: center;
+	margin: 5%;
+}
+
+
+.recipe-icons li {
+	list-style: none;
+	border-radius: 20px;
+	align-self: center;
+	margin: 0 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.recipe-icons li:hover {
+	padding: 6px;
+	box-shadow: 5px 5px 15px;
+}
+
+
+.spring {
+	background: #9EA93F;
+	padding: 5px 10px;
+}
+
+.summer {
+	background: #F7A278;
+	padding: 5px 7px;
+}
+
+.winter {
+	background: #93B5C6;
+	padding: 5px 7px;
+}
+
+.autumn {
+	background: #c4828a;
+	padding: 5px 7px;
+}
+
+article h3 {
+	position: absolute;
+	top: 55%;
+	background: rgba(71, 71, 71, .8);
+	padding: 5px 10px;
+	opacity: 0.9;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: #D7d6d6;
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: normal;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+h3:hover {
+	text-decoration: underline;
+} 
+
+
+aside {
+	background: rgba(247, 162, 120, .5);
+	width: 25%;
+	padding: 2%;
+	border-radius: 5px;
+	justify-content: space-around;
+	display: flex;
+	flex-flow: column;
+	margin: auto;
+}
+
+aside h4 {
+	text-align: justify;
+	font-weight: normal;
+	padding: 4%;
+}
+
+aside img {
+	border-radius: 10px;
+	align-self: center;
+	padding: 2%;
+}
+
+footer {
+	display: flex;
+	background: rgba(247, 162, 120, .5);
+	padding: 1%;
+	margin-top: 2%;
+}
+
+footer p {
+	font-weight: normal;
+	margin: auto;
+}
+
+/* Media queries */
+
+@media (max-width: 980px) {
+
+	main {
+		display: block;
+	}
+	
+	.articles {
+		justify-content: space-around;
+	}
+
+	aside {
+		width: 90%;
+		flex-flow: row;
+		margin: auto;
+		justify-content: center;
+	}
+
+	article h3 {
+		font-size: 16px;
+	}
+
+	
+}
+
+@media (max-width: 710px) {
+
+	h2 {
+		font-size: 20px;
+	}
+
+	nav li {
+		font-size: 14px;
+	}
+
+	article h3 {
+		font-size: 14px;
+		margin-right: 30px;
+	}
+
+}
+
+@media (max-width: 520px) {
+	
+	h2 {
+		font-size: 18px;
+	}
+
+
+	nav li a img {
+
+		height: 30px;
+	}
+
+
+	article img {
+		width: 200px;
+		height: auto;
+	}
+
+
+	aside img {
+		width: 150px;
+		height: auto;
+	}
+
+	aside h4 {
+		font-size: 12px;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 420px) {
+
+	nav li {
+	font-size: 12px;
+}
+	aside img {
+		width: 100px;
+		height: auto;
+	}
+
+	aside h4 {
+		font-size: 10px;
+	}
+}
+
+
